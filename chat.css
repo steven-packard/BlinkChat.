@@ -1,0 +1,89 @@
+.master-container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(10deg, rgb(145, 127, 179), rgb(229, 190, 236));
+    background-size: 300%;
+    animation: color 12s ease-in infinite;
+    border-radius: 10px;
+}
+
+.title-banner{
+    display: flex;
+    align-items: baseline;
+    height: 80px;
+    background-color: rgb(42, 47, 79);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    opacity: 0.7;
+
+}
+
+.title-text{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    height: 12px;  
+    width: auto;    
+    margin-left: 10px; 
+    padding-top: 3%;
+    animation: blink 1s infinite;
+}
+
+.room-id-container{ 
+    text-align: center; }
+
+.room-id{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.8;
+    color: rgb(42, 47, 79);
+}
+
+.chat-master-container{
+    display: flex;
+    justify-content: center;
+}
+
+.chat-box{
+    width: 80%;
+    height: 70vh;
+    border: solid;
+    background-color: rgb(253, 226, 243);
+    border-radius: 5px;
+    border: none;
+}
+
+.message{
+    margin-left: 30px;
+}
+
+.message-name{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+@keyframes color {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%; }
+}
+
+@keyframes blink {
+    0%, 49%, 100% {
+        opacity: 1;
+    }
+    50%, 99% {
+        opacity: 0;
+    }
+}

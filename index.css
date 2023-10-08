@@ -1,0 +1,135 @@
+.background-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(10deg, rgb(42, 47, 79), rgb(145, 127, 179));
+    background-size: 300%;
+    animation: color 10s ease-in infinite;
+    border-radius: 10px;
+}
+
+.master-container{
+    margin-top: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-master-container {
+    padding-left: 5%;
+    display: flex; 
+    align-items: baseline; 
+    padding-top: 250px;
+    width: 50%;
+}
+
+.art-master-container{
+    width: 50%;
+}
+
+.balloon{
+    height: 500px;
+    padding-top: 180px;
+    padding-left: 150px;
+    animation: floatBalloon 3s ease-in-out infinite;
+}
+
+
+.logo {
+    height: 30px;  
+    width: auto;    
+    margin-left: 15px; 
+    padding-top: 2.75%;
+    animation: blink 1s infinite;
+}
+
+
+.main-title {
+    text-align: left;
+    margin-top: 0px;
+    font-size: 120px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-title-desc {
+    display: block;
+    font-size: 25px;
+    color: rgb(200, 200, 200);
+    margin-left: 8px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    gap: 8%;
+    margin-left: 0; 
+    padding-top: 12%;
+}
+
+.join-button, .create-button {
+    padding: 25px 55px;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    opacity: 0.8;
+    color: rgb(50,50,50);
+    font-weight: 500;
+}
+
+.dom-container{
+   padding-top: 50px;
+}
+
+.room-input {
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 40px;
+    color: rgb(145, 127, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 0;
+    display: none;  
+    overflow: hidden; 
+    transition: height 0.5s ease-out;
+}
+
+.room-input.expanded {
+    height: 100px;
+}
+
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%; 
+    }
+}
+
+@keyframes blink {
+    0%, 49%, 100% {
+        opacity: 1;
+    }
+    50%, 99% {
+        opacity: 0;
+    }
+}
+
+@keyframes floatBalloon{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
